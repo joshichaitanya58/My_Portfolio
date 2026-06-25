@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Chaitanya Joshi</title>
+    <link rel="icon" href="assets/fevico.ico">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f8f9fc;
+            overflow-x: hidden;
+        }
+
+        /* ── PAGE HEADER ── */
+        .page-header {
+            padding-top: 100px;
+            padding-bottom: 40px;
+            background-color: #f8f9fa;
+        }
+
+        .page-header h1 {
+            font-weight: 700;
+            font-size: clamp(1.6rem, 5vw, 2.5rem);
+        }
+
+        .page-header .lead {
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        }
+
+        /* ── CERT CARD ── */
+        .cert-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(58, 134, 255, .18);
+        }
+
+        /* ── CERTIFICATE IMAGE ── */
+        .cert-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cert-img img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .cert-card:hover .cert-img img {
+            transform: scale(1.07);
+        }
+
+        /* ── VERIFIED BADGE ── */
+        .verified-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(255, 255, 255, .95);
+            color: #198754;
+            padding: 5px 12px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+            white-space: nowrap;
+        }
+
+        /* ── BADGES ── */
+        .badge {
+            padding: 6px 12px;
+            font-size: 11px;
+        }
+
+        /* ── BUTTONS ── */
+        .btn {
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        /* ── MODAL ── */
+        .modal-content {
+            border-radius: 20px;
+        }
+
+        .modal-body img {
+            max-height: 80vh;
+            border-radius: 10px;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        /* ── MOBILE ── */
+        @media (max-width: 576px) {
+            .page-header {
+                padding-top: 90px;
+                padding-bottom: 28px;
+            }
+
+            .cert-img img {
+                height: 180px;
+            }
+
+            .verified-badge {
+                font-size: 11px;
+                padding: 4px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Chaitanya Joshi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active text-primary"
+                            href="certificates.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1>🏆 My Certifications</h1>
+            <p class="lead mt-3 mx-auto" style="max-width: 600px;">
+                A collection of certifications, internships, bootcamps and technical achievements
+                that reflect my continuous learning journey.
+            </p>
+        </div>
+    </header>
+
+    <!-- CERTIFICATES GRID -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ===================== Certificate 1 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+                        <div class="cert-img">
+                            <img src="assets/certificates/nptel.jpg" alt="Joy of Computing Using Python">
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">NPTEL • IIT Madras</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Joy of Computing Using Python</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully completed the NPTEL certification with <strong>Elite</strong> grade,
+                                demonstrating strong knowledge in Python programming, computational thinking,
+                                and problem-solving techniques.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Python</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Problem Solving</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">NPTEL</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Oct 2023
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Elite • 58%
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/nptel.jpg"
+                                    data-title="Joy of Computing Using Python">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/nptel.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 2 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+                        <div class="cert-img">
+                            <img src="assets/certificates/spokenTutorial.jpg" alt="Python 3.4.3">
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">IIT Bombay Spoken Tutorial</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Python 3.4.3</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully completed Python training conducted by IIT Bombay with
+                                <strong>90%</strong> score, gaining practical knowledge of Python programming,
+                                functions, modules, and object-oriented programming concepts.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Python</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">OOP</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Programming</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Jul 2024
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> 90%
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/spokenTutorial.jpg"
+                                    data-title="Python 3.4.3">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/spokenTutorial.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 3 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/VaultofCode.jpg" alt="Python Programming Internship">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">VaultofCodes</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Python Programming Internship</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully completed a Python Programming Internship by developing
+                                practical applications and strengthening programming, debugging,
+                                and problem-solving skills through hands-on assignments.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Python</span>
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Debugging</span>
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Problem Solving</span>
+
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Aug 2025
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Internship
+                                </small>
+
+                            </div>
+
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/VaultofCode.jpg"
+                                    data-title="Python Programming Internship">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/VaultofCode.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 4 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/webdevelopmentInternship.jpg" alt="Web Development Internship">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">Tech Interex</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Web Development Internship</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Completed a Web Development Internship focused on building responsive
+                                websites using modern web technologies and improving frontend
+                                development skills.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">HTML</span>
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">CSS</span>
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">JavaScript</span>
+
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Jun 2025
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Internship
+                                </small>
+
+                            </div>
+
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/webdevelopmentInternship.jpg"
+                                    data-title="Web Development Internship">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/webdevelopmentInternship.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 5 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/codsoft.jpg" alt="C++ Programming Internship">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">CodSoft</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">C++ Programming Internship</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully completed a C++ Programming Internship by implementing
+                                object-oriented programming concepts and developing practical
+                                console-based applications.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">C++</span>
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">OOP</span>
+
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Problem Solving</span>
+
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Aug 2024
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Internship
+                                </small>
+
+                            </div>
+
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/codsoft.jpg"
+                                    data-title="C++ Programming Internship">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/codsoft.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 6 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/bootcamp2.jpg" alt="IDE Bootcamp Edition 3 Phase 2">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">AICTE • Ministry of Education</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">IDE Bootcamp – Edition 3 Phase 2</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully participated in the AICTE Innovation, Design & Entrepreneurship
+                                (IDE) Bootcamp, gaining practical exposure to innovation, entrepreneurship,
+                                startup development, and design thinking methodologies.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Innovation</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Entrepreneurship</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Design Thinking</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Jan 2026
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Bootcamp
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/bootcamp2.jpg"
+                                    data-title="IDE Bootcamp Edition 3 Phase 2">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/bootcamp2.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 7 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/bootcamp1.jpg" alt="IDE Bootcamp Edition 2 Phase 1">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">AICTE • Ministry of Education</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">IDE Bootcamp – Edition 2 Phase 1</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully completed the AICTE Innovation, Design & Entrepreneurship
+                                Bootcamp, learning startup ideation, innovation processes, and
+                                problem-solving through design thinking.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Startup</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Innovation</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Design Thinking</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Dec 2024
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Bootcamp
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/bootcamp1.jpg"
+                                    data-title="IDE Bootcamp Edition 2 Phase 1">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/bootcamp1.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 8 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/igniteBootcamp.jpg" alt="Ignite Bootcamp - Idea to Plan">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">Wadhwani Foundation</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Ignite Bootcamp – Idea to Plan</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully completed the Ignite Bootcamp by transforming innovative
+                                ideas into structured business plans while learning entrepreneurship,
+                                startup validation, and innovation strategies.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Entrepreneurship</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Business Planning</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Innovation</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> Feb 2025
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Bootcamp
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/igniteBootcamp.jpg"
+                                    data-title="Ignite Bootcamp">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/igniteBootcamp.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 9 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/greateLearning.jpg" alt="Object-Oriented Programming in C++">
+
+                            <span class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i> Verified
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">Great Learning Academy</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Object-Oriented Programming in C++</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Successfully completed the Object-Oriented Programming course covering
+                                classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">C++</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">OOP</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Programming</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> 2025
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Certified
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/greateLearning.jpg"
+                                    data-title="Object-Oriented Programming in C++">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/greateLearning.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 10 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/mumbaihacks.jpg" alt="Generative AI Hackathon">
+
+                            <span class="verified-badge bg-warning text-dark">
+                                <i class="bi bi-trophy-fill"></i> Achievement
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">Mumbai Hacks</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Generative AI Hackathon</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Participated in the Generative AI Hackathon contributing to a
+                                Guinness World Record attempt while collaborating on AI-based
+                                innovation and problem-solving activities.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Artificial
+                                    Intelligence</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Hackathon</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Teamwork</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> 2025
+                                </small>
+
+                                <small class="text-warning fw-semibold">
+                                    <i class="bi bi-trophy-fill me-1"></i> Guinness World Record
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/mumbaihacks.jpg"
+                                    data-title="Generative AI Hackathon">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/mumbaihacks.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 11 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/sunhacks.png" alt="International SUNHACKS Hackathon">
+
+                            <span class="verified-badge bg-warning text-dark">
+                                <i class="bi bi-trophy-fill"></i> Participation
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">SUNHACKS</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">International SUNHACKS Hackathon</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Participated in the International SUNHACKS Hackathon, collaborating with
+                                teams to develop innovative software solutions while enhancing technical,
+                                problem-solving, and teamwork skills.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Hackathon</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Teamwork</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Problem Solving</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> 2025
+                                </small>
+
+                                <small class="text-warning fw-semibold">
+                                    <i class="bi bi-trophy-fill me-1"></i> Participant
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/sunhacks.png"
+                                    data-title="International SUNHACKS Hackathon">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/sunhacks.png" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 12 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/AvishkarCoordinator.jpg" alt="Avishkar Research Competition Student Coordinator">
+
+                            <span class="verified-badge bg-success text-white">
+                                <i class="bi bi-stars"></i> Leadership
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">Avishkar Research Convention</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Student Coordinator</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Served as a Student Coordinator for the Avishkar Research Competition,
+                                managing event coordination, participant communication, and ensuring the
+                                smooth execution of competition activities.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Leadership</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Event Management</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Communication</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> 2024
+                                </small>
+
+                                <small class="text-success fw-semibold">
+                                    <i class="bi bi-award-fill me-1"></i> Coordinator
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/AvishkarCoordinator.jpg"
+                                    data-title="Student Coordinator - Avishkar">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/AvishkarCoordinator.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===================== Certificate 13 ===================== -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cert-card">
+
+                        <div class="cert-img">
+                            <img src="assets/certificates/AvishkarParticipation.jpg" alt="Avishkar Research Competition Participant">
+
+                            <span class="verified-badge bg-warning text-dark">
+                                <i class="bi bi-trophy-fill"></i> Participation
+                            </span>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-building text-primary me-2"></i>
+                                <small class="fw-semibold text-primary">Avishkar Research Convention</small>
+                            </div>
+
+                            <h5 class="fw-bold mb-3">Avishkar Research Competition</h5>
+
+                            <p class="text-muted flex-grow-1">
+                                Participated in the Avishkar Research Competition by presenting an
+                                innovative technical project, demonstrating research aptitude,
+                                presentation skills, and innovative problem-solving abilities.
+                            </p>
+
+                            <div class="mb-3 d-flex flex-wrap gap-1">
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Research</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Presentation</span>
+                                <span class="badge rounded-pill bg-primary-subtle text-primary">Innovation</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> 2025
+                                </small>
+
+                                <small class="text-warning fw-semibold">
+                                    <i class="bi bi-trophy-fill me-1"></i> Participant
+                                </small>
+                            </div>
+
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal" data-img="assets/certificates/AvishkarParticipation.jpg"
+                                    data-title="Avishkar Research Competition">
+                                    <i class="bi bi-eye-fill me-2"></i> View Certificate
+                                </button>
+
+                                <a href="assets/certificates/AvishkarParticipation.jpg" download class="btn btn-outline-primary">
+                                    <i class="bi bi-download me-2"></i> Download Certificate
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREVIEW MODAL -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="certificateModalLabel">Certificate Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img id="modalCertImg" src="" class="img-fluid shadow" alt="Certificate Preview">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Chaitanya Joshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.padding = '';
+                navbar.style.boxShadow = '';
+            }
+        });
+
+        // Modal: dynamically set image from button's data-img attribute
+        const certModal = document.getElementById('certificateModal');
+        certModal.addEventListener('show.bs.modal', (event) => {
+            const btn = event.relatedTarget;
+            const imgSrc = btn.getAttribute('data-img');
+            const title = btn.getAttribute('data-title');
+            document.getElementById('modalCertImg').src = imgSrc;
+            document.getElementById('certificateModalLabel').textContent = title || 'Certificate Preview';
+        });
+    </script>
+</body>
+
+</html>

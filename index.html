@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Chaitanya Joshi</title>
+    <link rel="icon" href="assets/fevico.ico" type="image/x-icon">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Prevent horizontal scrolling on mobile devices */
+        html,
+        body {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        /* Profile image hover effect */
+        .profile-img {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Chaitanya Joshi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificates.html">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-4">Hi, I'm Chaitanya Joshi</h1>
+                    <p class="lead mb-4">Information Technology (IT) Student & Frontend Developer</p>
+                    <p class="mb-5">I'm passionate about coding, problem-solving, and creating innovative solutions.
+                        Currently pursuing my Bachelor's degree in Information Technology (IT) while expanding my skills
+                        in web
+                        development and software engineering.</p>
+                    <a href="#projects" class="btn btn-light btn-lg me-3 mb-2 mb-sm-0">View My Projects</a>
+                    <a href="assets/resume/Chaitanya Vijay Joshi (Resume).pdf" target="_blank" class="btn btn-outline-light btn-lg me-3 mb-2 mb-sm-0">My Resume</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg mb-2 mb-sm-0">Contact Me</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/me.jpeg" alt="My Profile Image"
+                        class="profile-img rounded-circle img-fluid mt-4 mt-md-0" id="me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="lead">I'm a dedicated Information Technology (IT) student with a strong interest in
+                        software
+                        development and emerging technologies.</p>
+                    <p>Currently in my third year of Bachelor of Information Technology (IT) at SVKM (DBATU University),
+                        Dhule, I
+                        have maintained a CGPA of 7.52 while actively participating in coding competitions and tech
+                        clubs.</p>
+                    <p>My journey in technology began in high school when I built my first website. Since then, I've
+                        been constantly learning and expanding my skill set through coursework, personal projects, and
+                        online certifications.</p>
+                    <p>When I'm not coding, you can find me participating in hackathons, reading tech blogs, or
+                        exploring new programming languages. I believe in the power of technology to solve real-world
+                        problems and am eager to contribute to innovative projects.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <i class="bi bi-code-slash fs-1 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Programming</h5>
+                                    <p class="mb-0">C, C++, Python</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <i class="bi bi-globe fs-1 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Web Development</h5>
+                                    <p class="mb-0">HTML, CSS, JavaScript, Angular</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <i class="bi bi-database fs-1 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Database</h5>
+                                    <p class="mb-0">MySQL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <i class="bi bi-tools fs-1 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Tools</h5>
+                                    <p class="mb-0">GitHub, VS Code, Antigravity, AI Tools</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">My Education</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <span class="timeline-year">2023 - (Expected 2027)</span>
+                        <h4>Bachelor of Technology in Information Technology (IT)</h4>
+                        <h5>SVKM (DBATU University), Dhule</h5>
+                        <p>CGPA: 7.52/10</p>
+                        <p>Relevant Courses: Data Structures, Database Management Systems, Object-Oriented
+                            Programming, Web Technologies</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <span class="timeline-year">2022 - 2023</span>
+                        <h4>Class XII (HSC)</h4>
+                        <h5>Jai Hind Senior College</h5>
+                        <p>Percentage: 59.33%</p>
+                        <p>Stream: Computer Science (PCM)</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <span class="timeline-year">2020 - 2021</span>
+                        <h4>Class X (SSC)</h4>
+                        <h5>Jai Hind Highschool</h5>
+                        <p>Percentage: 67.80%</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 p-4 shadow-sm" style="border-radius: 15px; border:none;">
+                        <h4 class="fw-bold mb-3"><i class="bi bi-display text-primary me-2"></i>Frontend Development</h4>
+                        <p class="text-muted">Crafting responsive and user-friendly interfaces with modern web technologies.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge fs-6 text-dark bg-light border">HTML</span>
+                            <span class="badge fs-6 text-dark bg-light border">CSS</span>
+                            <span class="badge fs-6 text-dark bg-light border">JavaScript</span>
+                            <span class="badge fs-6 text-dark bg-light border">Angular</span>
+                            <span class="badge fs-6 text-dark bg-light border">React</span>
+                            <span class="badge fs-6 text-dark bg-light border">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 p-4 shadow-sm" style="border-radius: 15px; border:none;">
+                        <h4 class="fw-bold mb-3"><i class="bi bi-server text-primary me-2"></i>Backend & Databases</h4>
+                        <p class="text-muted">Building robust server-side logic and managing data efficiently.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge fs-6 text-dark bg-light border">PHP</span>
+                            <span class="badge fs-6 text-dark bg-light border">Flask</span>
+                            <span class="badge fs-6 text-dark bg-light border">Node.js</span>
+                            <span class="badge fs-6 text-dark bg-light border">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 p-4 shadow-sm" style="border-radius: 15px; border:none;">
+                        <h4 class="fw-bold mb-3"><i class="bi bi-code-slash text-primary me-2"></i>Programming Languages</h4>
+                        <p class="text-muted">Versatile in multiple programming paradigms to solve complex problems.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge fs-6 text-dark bg-light border">C</span>
+                            <span class="badge fs-6 text-dark bg-light border">C++</span>
+                            <span class="badge fs-6 text-dark bg-light border">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 p-4 shadow-sm" style="border-radius: 15px; border:none;">
+                        <h4 class="fw-bold mb-3"><i class="bi bi-tools text-primary me-2"></i>Tools & Technologies</h4>
+                        <p class="text-muted">Proficient with a variety of tools to streamline development and collaboration.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge fs-6 text-dark bg-light border">GitHub</span>
+                            <span class="badge fs-6 text-dark bg-light border">VS Code</span>
+                            <span class="badge fs-6 text-dark bg-light border">Antigravity</span>
+                            <span class="badge fs-6 text-dark bg-light border">AI Tools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/portfolio.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">My Portfolio</h5>
+                            <p class="card-text text-muted mb-4">A responsive portfolio website showcasing my skills and
+                                projects.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill mb-1">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a target="_blank" href="https://github.com/joshichaitanya58/My_Portfolio"
+                                    class="btn btn-outline-primary w-100"><i class="bi bi-github me-1"></i>Code</a>
+                                <a target="_blank" href="https://joshichaitanya58.github.io/My_Portfolio/index.html"
+                                    class="btn btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/Hospital.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Hospital Database Management System</h5>
+                            <p class="card-text text-muted mb-4">Crafted a Hospital Database Management System using
+                                HTML, CSS,
+                                JavaScript, PHP, and MySQL to efficiently manage patient, doctor, and
+                                appointment data. The system streamlines hospital operations and improves data
+                                accessibility.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">PHP</span>
+                                <span class="badge bg-primary rounded-pill mb-1">MySQL</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a target="_blank"
+                                    href="https://github.com/joshichaitanya58/Hospital-Database-Management-System"
+                                    class="btn btn-outline-primary w-100"><i class="bi bi-github me-1"></i>Code</a>
+                                <a target="_blank" href="deployPending.html" class="btn btn-primary w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/Quiz.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Quiz Game</h5>
+                            <p class="card-text text-muted mb-4">Developed a dynamic quiz application using HTML, CSS,
+                                and
+                                JavaScript. This project features an interactive and user-friendly interface that
+                                presents questions, tracks scores, and provides instant feedback on answers.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill mb-1">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a target="_blank" href="https://github.com/joshichaitanya58/Quiz"
+                                    class="btn btn-outline-primary w-100"><i class="bi bi-github me-1"></i>Code</a>
+                                <a target="_blank" href="https://joshichaitanya58.github.io/Quiz/"
+                                    class="btn btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/calculator.png" class="card-img-top" alt="Project 4">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Simple Calculator</h5>
+                            <p class="card-text text-muted mb-4">I've built a web-based calculator using HTML for the
+                                structure and
+                                layout, CSS to give it a design and style, and JavaScript to handle the functionality
+                                and perform the calculations when buttons are clicked.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill mb-1">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a target="_blank" href="https://github.com/joshichaitanya58/Simple-Calculator"
+                                    class="btn btn-outline-primary w-100"><i class="bi bi-github me-1"></i>Code</a>
+                                <a target="_blank" href="https://joshichaitanya58.github.io/Simple-Calculator/"
+                                    class="btn btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/Child.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Child Vaccination Record and Alert System</h5>
+                            <p class="card-text text-muted mb-4">A web application for managing child vaccination
+                                records and sending
+                                alerts for upcoming vaccinations.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">Python (Flask)</span>
+                                <span class="badge bg-primary rounded-pill mb-1">MySQL</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a target="_blank"
+                                    href="https://github.com/joshichaitanya58/child_vaccination_record_and_alert_system"
+                                    class="btn btn-outline-primary w-100"><i class="bi bi-github me-1"></i>Code</a>
+                                <a target="_blank" href="https://child-vaccination-record-and-alert.vercel.app/" class="btn btn-primary w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/SmartShoppy.png" class="card-img-top" alt="Project 6">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Smart Shoppy</h5>
+                            <p class="card-text text-muted mb-4">Smart Shoppy is a smart platform that compares product
+                                prices from
+                                different stores and websites. It helps users find the best deals and save time and
+                                money.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">Python (Flask)</span>
+                                <span class="badge bg-primary rounded-pill mb-1">MySQL</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a target="_blank" href="https://github.com/joshichaitanya58/smart_shoppy"
+                                    class="btn btn-outline-primary w-100"><i class="bi bi-github me-1"></i>Code</a>
+                                <a target="_blank" href="https://smart-shoppy.vercel.app" class="btn btn-primary w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="https://placehold.co/600x400/3a86ff/FFFFFF?text=Jaldi+Trip \n INPROGRESS"
+                            class="card-img-top" alt="Project 7">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Jaldi Trip</h5>
+                            <p class="card-text text-muted mb-4">Jaldi Trip is a travel booking platform that allows
+                                users to search and
+                                book flights, hotels, and other travel services at the best prices.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-primary rounded-pill mb-1">Node JS</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="inprogress.html" class="btn btn-outline-primary w-100"><i
+                                        class="bi bi-github me-1"></i>Code</a>
+                                <a href="deployPending.html" class="btn btn-primary w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/tic-tac-toe.png"
+                            class="card-img-top" alt="Project 8">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Tic-Tac-Toe</h5>
+                            <p class="card-text text-muted mb-4">Tic-Tac-Toe is a classic game where two players take turns marking the spaces in a grid.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/joshichaitanya58/Tic-Tac-Toe" class="btn btn-outline-primary w-100"><i
+                                        class="bi bi-github me-1"></i>Code</a>
+                                <a href="https://joshichaitanya58.github.io/Tic-Tac-Toe/" class="btn btn-primary w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/blog.png"
+                            class="card-img-top" alt="Project 9">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Simple Blog Website</h5>
+                            <p class="card-text text-muted mb-4">A simple blog website built with HTML, CSS, and JavaScript, it store blogs on localstorage.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">HTML/CSS</span>
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/joshichaitanya58/Simple_Blog_Website" class="btn btn-outline-primary w-100"><i
+                                        class="bi bi-github me-1"></i>Code</a>
+                                <a href="https://joshichaitanya58.github.io/Simple_Blog_Website/" class="btn btn-primary w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/angular.png"
+                            class="card-img-top" alt="Project 10">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Angular Project</h5>
+                            <p class="card-text text-muted mb-4">An Angular project built with TypeScript, HTML, and CSS, showcasing modern web development practices.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-primary rounded-pill me-1 mb-1">Angular</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/joshichaitanya58/Angular_Project_-SwiftCart-" class="btn btn-outline-primary w-100"><i
+                                        class="bi bi-github me-1"></i>Code</a>
+                                <a href="deployPending.html" class="btn btn-primary w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary" id="submitButton">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="form-status" class="mt-3"></div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="mb-4">
+                        <h5>Email</h5>
+                        <p>joshichaitanya58@gmail.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5>Phone</h5>
+                        <p>+91 92844 98031</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5>Location</h5>
+                        <p>Dhule, Maharashtra, India</p>
+                    </div>
+                    <div>
+                        <h5>Follow Me</h5>
+                        <a target="_blank" href="https://github.com/joshichaitanya58" class="social-icon"><i
+                                class="bi bi-github"></i></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/chaitanya-joshi-644b39298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/chaitanya_joshi_1146?igsh=c28yc2E0ajRxa3F0"
+                            class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a target="_blank" href="https://wa.me/919284498031?text=Hello%20there!" class="social-icon"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a target="_blank" href="mailto:joshichaitanya58@gmail.com?subject=Hello&body=Hello%20there"
+                            class="social-icon"><i class="bi bi-envelope-fill"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Chaitanya Joshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const submitButton = document.getElementById('submitButton');
+            const formStatus = document.getElementById('form-status');
+
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+            formStatus.innerHTML = '';
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+            };
+
+            try {
+                const response = await fetch('http://localhost:3000/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    formStatus.innerHTML = `<div class="alert alert-success" role="alert">Message sent successfully!</div>`;
+                    document.getElementById('contactForm').reset();
+                } else {
+                    throw new Error(result.message || 'Failed to send message.');
+                }
+            } catch (error) {
+                formStatus.innerHTML = `<div class="alert alert-danger" role="alert">${error.message}</div>`;
+            } finally {
+                submitButton.disabled = false;
+                submitButton.innerHTML = 'Send Message';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
