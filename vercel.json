@@ -6,9 +6,9 @@
       "use": "@vercel/node"
     },
     {
-      "src": "*.html",
+      "src": "package.json",
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }]
+  "routes": [{ "src": "/(.*)", "dest": "/$1" }]
 }
