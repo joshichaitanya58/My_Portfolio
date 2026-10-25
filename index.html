@@ -81,7 +81,7 @@
                         core programming gained through 3 internships and multiple full-stack projects. Skilled in
                         software testing & data analysis.
                     </p>
-                    <div class="d-flex flex-wrap gap-2 mb-5">
+                    <div class="d-flex flex-wrap gap-2 mb-5 hero-actions-group">
                         <a href="#projects" class="btn btn-light btn-lg text-primary fw-semibold"><i
                                 class="bi bi-grid-fill me-2"></i>View Projects</a>
                         <a href="assets/resume/Chaitanya Vijay Joshi (Resume).pdf" target="_blank"
@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-6 col-sm-3">
                             <div class="hero-stat-card">
-                                <div class="stat-number" data-target="13">13</div>
+                                <div class="stat-number" data-target="14">14</div>
                                 <div class="stat-label">Projects</div>
                             </div>
                         </div>
@@ -148,10 +148,15 @@
                         analysis techniques. I seek a Software Developer role where I can engineer reliable, scalable
                         applications while continuing to grow professionally.
                     </p>
-                    <div class="mt-4 d-flex gap-3">
+                    <div class="mt-4 d-flex flex-wrap gap-3">
                         <div class="d-flex align-items-center gap-2">
                             <i class="bi bi-geo-alt-fill text-primary fs-5"></i>
-                            <span>Dhule, Maharashtra</span>
+                            <a href="https://maps.google.com/?q=Dhule,+Maharashtra,+India" target="_blank"
+                                rel="noopener noreferrer" class="location-map-link text-dark"
+                                title="Open Dhule in Google Maps">
+                                <span>Dhule, Maharashtra</span>
+                                <i class="bi bi-box-arrow-up-right map-ext-icon text-primary"></i>
+                            </a>
                         </div>
                         <div class="d-flex align-items-center gap-2">
                             <i class="bi bi-check-circle-fill text-primary fs-5"></i>
@@ -406,13 +411,17 @@
                     <div class="project-card card h-100">
                         <img src="assets/images/datanova.png" class="card-img-top" alt="DataNova Project">
                         <div class="card-body d-flex flex-column">
-                            <span class="badge bg-primary rounded-pill w-auto align-self-start mb-2">In Progress</span>
                             <h5 class="card-title fw-bold mb-2">DataNova – AI Data Analytics Platform</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Flask + MySQL platform that auto-cleans uploaded CSV/Excel files and generates
                                 dashboards, charts, and AI insights without SQL. Includes role-based dashboards (Admin,
                                 Manager, Analyst).
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary" onclick="openProjectModal('datanova')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">Flask</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">MySQL</span>
@@ -423,7 +432,8 @@
                                 <a target="_blank" href="https://github.com/joshichaitanya58/DataNova"
                                     class="btn btn-outline-primary btn-sm w-100"><i
                                         class="bi bi-github me-1"></i>Code</a>
-                                <a target="_blank" href="https://datanova-fude.onrender.com" class="btn btn-primary btn-sm w-100"><i
+                                <a target="_blank" href="https://datanova-fude.onrender.com"
+                                    class="btn btn-primary btn-sm w-100"><i
                                         class="bi bi-box-arrow-up-right me-1"></i>Live</a>
                             </div>
                         </div>
@@ -431,15 +441,20 @@
                 </div>
 
                 <!-- My Portfolio -->
-                <div class="col-md-6 col-lg-4 project-item" data-category="aidata" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4 project-item" data-category="fullstack" data-aos="fade-up">
                     <div class="project-card card h-100">
                         <img src="assets/images/portfolio.png" class="card-img-top" alt="My Portfolio Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">My Portfolio</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 My Portfolio – Personal Portfolio Website, A responsive portfolio website showcasing my
                                 skills and projects.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary" onclick="openProjectModal('portfolio')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">Node.js </span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">HTML</span>
@@ -465,10 +480,16 @@
                         <img src="assets/images/SmartShoppy.png" class="card-img-top" alt="Smart Shoppy Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Smart Shoppy AI Price Comparison</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Full-stack platform comparing product prices across e-commerce sites. Features product
                                 search, price comparison, wishlist, price alerts, and price history tracking.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary"
+                                    onclick="openProjectModal('smart_shoppy')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">Python (Flask)</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">MySQL</span>
@@ -494,10 +515,16 @@
                         <img src="assets/images/Child.png" class="card-img-top" alt="Child Vaccination Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Child Vaccination & Alert System</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Healthcare management web application for child vaccination tracking and automated
                                 SMS/email alerts for upcoming doses, with secure user auth.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary"
+                                    onclick="openProjectModal('child_vaccination')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">Python (Flask)</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">MySQL</span>
@@ -523,10 +550,15 @@
                         <img src="assets/images/jalditrip.png" class="card-img-top" alt="Jaldi Trip Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Jaldi Trip (Travel Booking)</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Travel booking platform enabling users to search flights, hotels, trains, and packages
                                 with a modern, responsive user interface.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary" onclick="openProjectModal('jaldi_trip')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">Node.js</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">HTML/CSS</span>
@@ -551,10 +583,15 @@
                         <img src="assets/images/convai.png" class="card-img-top" alt="ConvAI Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">ConvAI (AI Chatbot Platform)</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Intelligent conversational AI chatbot featuring interactive response streams, session
                                 storage in MongoDB, and authentication.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary" onclick="openProjectModal('convai')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">Python (Flask)</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">MongoDB</span>
@@ -579,11 +616,17 @@
                         <img src="assets/images/fastapi.png" class="card-img-top" alt="Book Catlog (FastAPI)">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Book Catlog (FastAPI)</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Book Catlog (FastAPI) Backend system that manages book records with comprehensive CRUD,
                                 category and author management, user-based book lending & returns, authentication, and
                                 role-based access control.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary"
+                                    onclick="openProjectModal('fastapi_book')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">FastAPI</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">HTML/CSS</span>
@@ -607,10 +650,16 @@
                         <img src="assets/images/Hospital.png" class="card-img-top" alt="Hospital DBMS Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Hospital DBMS System</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Complete hospital database application managing patients, doctors, appointments, and
                                 medical records using PHP & MySQL.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary"
+                                    onclick="openProjectModal('hospital_dbms')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">PHP</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">MySQL</span>
@@ -635,10 +684,15 @@
                         <img src="assets/images/Quiz.png" class="card-img-top" alt="Quiz Game">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Interactive Quiz Web App</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Dynamic web application with interactive question progression, timer, score tracking,
                                 and instant solution evaluation.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary" onclick="openProjectModal('quiz')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">JavaScript</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">HTML5</span>
@@ -663,10 +717,15 @@
                         <img src="assets/images/calculator.png" class="card-img-top" alt="Calculator Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Web Calculator</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Web calculator app with responsive button layout, keypress support, and clean
                                 mathematical expression evaluation logic.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary" onclick="openProjectModal('calculator')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">HTML/CSS</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">JavaScript</span>
@@ -690,10 +749,16 @@
                         <img src="assets/images/tic-tac-toe.png" class="card-img-top" alt="Tic Tac Toe Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Tic Tac Toe</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Web-based Tic Tac Toe game featuring a 3x3 grid, click-based moves, immediate win
                                 detection for X/O, and a reset functionality.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary"
+                                    onclick="openProjectModal('tic_tac_toe')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">HTML/CSS</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">JavaScript</span>
@@ -717,10 +782,15 @@
                         <img src="assets/images/blog.png" class="card-img-top" alt="Simple Blog Website Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Simple Blog Website</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 A responsive, fully functional blog website featuring homepage, blogs page, and blog
                                 detail view.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary" onclick="openProjectModal('blog')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">HTML/CSS</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">JavaScript</span>
@@ -744,10 +814,16 @@
                         <img src="assets/images/angular.png" class="card-img-top" alt="Angular Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold mb-2">Angular SwiftCart E-Commerce</h5>
-                            <p class="card-text text-muted small mb-3">
+                            <p class="card-text text-muted small mb-2">
                                 Angular single page application built with TypeScript, RxJS, and component routing
                                 demonstrating modern frontend architecture.
                             </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary"
+                                    onclick="openProjectModal('angular_swiftcart')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
                             <div class="mb-3">
                                 <span class="badge bg-light text-dark border me-1 mb-1">Angular</span>
                                 <span class="badge bg-light text-dark border me-1 mb-1">TypeScript</span>
@@ -759,6 +835,40 @@
                                     class="btn btn-outline-primary btn-sm w-100"><i
                                         class="bi bi-github me-1"></i>Code</a>
                                 <a target="_blank" href="deployPending.html" class="btn btn-primary btn-sm w-100"><i
+                                        class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Master -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="frontend" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="project-card card h-100">
+                        <img src="assets/images/quiz_master.png" class="card-img-top" alt="Quiz Master Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-2">Quiz Master</h5>
+                            <p class="card-text text-muted small mb-2">
+                                Interactive multiple-choice quiz platform featuring topic selection, 15-second timed
+                                questions, live score tracking, instant feedback, and comprehensive answer reviews.
+                            </p>
+                            <div class="mb-3">
+                                <button type="button" class="btn-more-summary"
+                                    onclick="openProjectModal('quiz_master')">
+                                    More <i class="bi bi-arrow-right-short"></i>
+                                </button>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark border me-1 mb-1">HTML5</span>
+                                <span class="badge bg-light text-dark border me-1 mb-1">CSS3</span>
+                                <span class="badge bg-light text-dark border me-1 mb-1">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a target="_blank" href="https://github.com/joshichaitanya58/quiz_master"
+                                    class="btn btn-outline-primary btn-sm w-100"><i
+                                        class="bi bi-github me-1"></i>Code</a>
+                                <a target="_blank" href="https://joshichaitanya58.github.io/quiz_master/"
+                                    class="btn btn-primary btn-sm w-100"><i
                                         class="bi bi-box-arrow-up-right me-1"></i>Live</a>
                             </div>
                         </div>
@@ -879,21 +989,23 @@
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="name" class="form-label fw-semibold">Your Name</label>
-                                    <input type="text" class="form-control" id="name" required placeholder="Enter your full name">
+                                    <input type="text" class="form-control" id="name" name="name" autocomplete="name"
+                                        required placeholder="Enter your full name">
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="email" class="form-label fw-semibold">Your Email</label>
-                                    <input type="email" class="form-control" id="email" required
-                                        placeholder="Enter your email address">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        autocomplete="email" required placeholder="Enter your email address">
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label for="subject" class="form-label fw-semibold">Subject</label>
-                                    <input type="text" class="form-control" id="subject" required
-                                        placeholder="Job Opportunity / Project Inquiry">
+                                    <input type="text" class="form-control" id="subject" name="subject"
+                                        autocomplete="off" required placeholder="Job Opportunity / Project Inquiry">
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label for="message" class="form-label fw-semibold">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" required
+                                    <textarea class="form-control" id="message" name="message" autocomplete="off"
+                                        rows="5" required
                                         placeholder="Hi Chaitanya, I'd like to discuss a potential opportunity with you..."></textarea>
                                 </div>
                                 <div class="col-12">
@@ -906,7 +1018,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center" data-aos="fade-left">
+                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center contact-info-col"
+                    data-aos="fade-left">
                     <div class="mb-4 d-flex align-items-center">
                         <div class="social-icon me-3"><i class="bi bi-envelope-fill"></i></div>
                         <div>
@@ -925,10 +1038,18 @@
                     </div>
 
                     <div class="mb-4 d-flex align-items-center">
-                        <div class="social-icon me-3"><i class="bi bi-geo-alt-fill"></i></div>
+                        <a href="https://maps.google.com/?q=Dhule,+Maharashtra,+India" target="_blank"
+                            rel="noopener noreferrer" class="social-icon me-3 text-decoration-none"
+                            title="Open Dhule in Google Maps">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </a>
                         <div>
                             <h6 class="fw-bold mb-0">Location</h6>
-                            <p class="text-muted mb-0">Dhule, Maharashtra, India</p>
+                            <a href="https://maps.google.com/?q=Dhule,+Maharashtra,+India" target="_blank"
+                                rel="noopener noreferrer" class="location-map-link" title="Open Dhule in Google Maps">
+                                <span>Dhule, Maharashtra, India</span>
+                                <i class="bi bi-box-arrow-up-right map-ext-icon text-primary"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -955,6 +1076,95 @@
         </div>
     </section>
 
+    <!-- Project Detailed Summary Modal -->
+    <div id="projectModalOverlay" class="project-modal-overlay" onclick="handleProjectModalBackdrop(event)">
+        <div class="project-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+            <!-- Modal Header -->
+            <div class="project-modal-header">
+                <div>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <span id="modalProjectCategory"
+                            class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill">Category</span>
+                        <span id="modalProjectStatus"
+                            class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">Status</span>
+                        <span id="modalProjectDeployment"
+                            class="badge bg-info-subtle text-info-emphasis border border-info-subtle rounded-pill">Deployment</span>
+                    </div>
+                    <h3 id="modalProjectTitle" class="project-modal-title fw-bold mb-0">Project Title</h3>
+                </div>
+                <button type="button" class="project-modal-close-btn" onclick="closeProjectModal()"
+                    aria-label="Close modal">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="project-modal-body">
+                <!-- Preview Image -->
+                <div class="project-modal-media mb-4">
+                    <img id="modalProjectImage" src="" alt="Project Preview" class="img-fluid rounded-3">
+                </div>
+
+                <!-- Detailed Summary -->
+                <div class="project-modal-section mb-4">
+                    <h6 class="project-modal-section-title"><i
+                            class="bi bi-file-earmark-text-fill text-primary me-2"></i>Detailed Summary</h6>
+                    <p id="modalProjectSummary" class="text-muted leading-relaxed mb-0"></p>
+                </div>
+
+                <!-- Architectural & Engineering Highlights (when available) -->
+                <div class="project-modal-section mb-4" id="modalHighlightsContainer">
+                    <h6 class="project-modal-section-title"><i
+                            class="bi bi-award-fill text-primary me-2"></i>Engineering Highlights</h6>
+                    <ul id="modalProjectHighlights" class="project-highlights-list mb-0"></ul>
+                </div>
+
+                <!-- Key Features -->
+                <div class="project-modal-section mb-4" id="modalFeaturesContainer">
+                    <h6 class="project-modal-section-title"><i class="bi bi-stars text-primary me-2"></i>Key Features
+                    </h6>
+                    <ul id="modalProjectFeatures" class="project-features-list mb-0"></ul>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="project-modal-section mb-4" id="modalTechContainer">
+                    <h6 class="project-modal-section-title"><i class="bi bi-cpu-fill text-primary me-2"></i>Technologies
+                        Used</h6>
+                    <div id="modalProjectTech" class="d-flex flex-wrap gap-2"></div>
+                </div>
+
+                <!-- Skills Demonstrated (when available) -->
+                <div class="project-modal-section mb-4" id="modalSkillsContainer">
+                    <h6 class="project-modal-section-title"><i class="bi bi-check2-circle text-primary me-2"></i>Skills
+                        Demonstrated</h6>
+                    <div id="modalProjectSkills" class="d-flex flex-wrap gap-2"></div>
+                </div>
+
+                <!-- Related Repositories & SDKs (when available) -->
+                <div class="project-modal-section" id="modalRelatedReposContainer">
+                    <h6 class="project-modal-section-title"><i
+                            class="bi bi-diagram-3-fill text-primary me-2"></i>Related Repositories & Packages</h6>
+                    <div id="modalRelatedReposList" class="d-flex flex-column gap-2"></div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="project-modal-footer">
+                <a id="modalCodeLink" href="#" target="_blank" class="btn btn-outline-primary btn-sm px-3 rounded-pill">
+                    <i class="bi bi-github me-1"></i>View Code
+                </a>
+                <a id="modalLiveLink" href="#" target="_blank"
+                    class="btn btn-primary btn-sm px-3 rounded-pill text-white">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Live Preview
+                </a>
+                <button type="button" class="btn btn-light btn-sm px-3 rounded-pill ms-auto"
+                    onclick="closeProjectModal()">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
@@ -978,6 +1188,7 @@
         AOS.init({
             duration: 800,
             once: true,
+            offset: 50,
             easing: 'ease-in-out'
         });
 
@@ -1008,16 +1219,27 @@
             const submitButton = document.getElementById('submitButton');
             const formStatus = document.getElementById('form-status');
 
+            const name = (document.getElementById('name').value || '').trim();
+            const email = (document.getElementById('email').value || '').trim();
+            const subject = (document.getElementById('subject').value || '').trim();
+            const message = (document.getElementById('message').value || '').trim();
+
+            if (!name || !email || !message) {
+                formStatus.innerHTML = `<div class="alert alert-warning rounded-3" role="alert"><i class="bi bi-exclamation-circle-fill me-2"></i>Please fill in all required fields (Name, Email, Message).</div>`;
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formStatus.innerHTML = `<div class="alert alert-warning rounded-3" role="alert"><i class="bi bi-exclamation-circle-fill me-2"></i>Please enter a valid email address.</div>`;
+                return;
+            }
+
             submitButton.disabled = true;
             submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
             formStatus.innerHTML = '';
 
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value,
-            };
+            const formData = { name, email, subject, message };
 
             try {
                 const response = await fetch('/send-email', {
@@ -1028,16 +1250,23 @@
                     body: JSON.stringify(formData),
                 });
 
-                const result = await response.json();
+                let result;
+                const contentType = response.headers.get('content-type');
+                if (contentType && contentType.includes('application/json')) {
+                    result = await response.json();
+                } else {
+                    const text = await response.text();
+                    result = { success: response.ok, message: text || (response.ok ? 'Message sent successfully!' : 'Failed to send message.') };
+                }
 
-                if (result.success) {
-                    formStatus.innerHTML = `<div class="alert alert-success rounded-3" role="alert"><i class="bi bi-check-circle-fill me-2"></i>Message sent successfully!</div>`;
+                if (response.ok && result.success) {
+                    formStatus.innerHTML = `<div class="alert alert-success rounded-3" role="alert"><i class="bi bi-check-circle-fill me-2"></i>${result.message || 'Message sent successfully!'}</div>`;
                     document.getElementById('contactForm').reset();
                 } else {
                     throw new Error(result.message || 'Failed to send message.');
                 }
             } catch (error) {
-                formStatus.innerHTML = `<div class="alert alert-danger rounded-3" role="alert"><i class="bi bi-exclamation-triangle-fill me-2"></i>${error.message}</div>`;
+                formStatus.innerHTML = `<div class="alert alert-danger rounded-3" role="alert"><i class="bi bi-exclamation-triangle-fill me-2"></i>${error.message || 'Network error occurred. Please try again.'}</div>`;
             } finally {
                 submitButton.disabled = false;
                 submitButton.innerHTML = '<i class="bi bi-send-fill me-2"></i>Send Message';

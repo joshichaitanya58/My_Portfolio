@@ -1,0 +1,608 @@
+{
+  "datanova": {
+    "title": "DataNova – Enterprise Data Science & BI Platform",
+    "category": "AI & Data Platforms",
+    "status": "Completed",
+    "image": "assets/images/datanova.png",
+    "shortSummary": "Role-based Flask + MySQL platform that automates data cleaning, EDA, AutoML, SQL tooling and executive KPI reporting in a single workspace.",
+    "fullSummary": "DataNova is a full-stack data science, engineering and business intelligence platform that unifies data ingestion, automated preprocessing, exploratory analysis, machine learning, SQL orchestration and KPI reporting. Strict role-based access control gives Administrators, Managers, Data Analysts and Developers their own workspaces and toolsets. The backend is organised as a modular service layer of 28 Flask services, with OTP-secured authentication, Google Drive sync and an AI assistant for natural-language insights.",
+    "keyFeatures": [
+      "Four role-based workspaces (Admin, Manager, Analyst, Developer) with strict RBAC and OTP-verified authentication",
+      "Automated data cleaning, missing-value imputation and dataset quality scoring, plus IQR and Z-score outlier detection",
+      "Deep-dive EDA with interactive charts, feature engineering, in-browser AutoML (classification, regression, clustering) and time-series forecasting",
+      "Developer toolkit: ETL pipelines, live MySQL and .sql dump analysis, and export of browser workflows as reproducible Python/SQL code",
+      "AI helper and semantic layer for natural-language data queries, automated insights and executive PDF/HTML reports with KPI tracking",
+      "Google Drive OAuth2 backup and sync, PWA-ready service worker with network-resilience handling, and a big-data chunking optimiser"
+    ],
+    "techStack": [
+      "Python 3.11",
+      "Flask",
+      "Gunicorn",
+      "MySQL",
+      "Pandas",
+      "NumPy",
+      "Scikit-Learn",
+      "SciPy",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Google Drive API (OAuth2)",
+      "SMTP",
+      "Gemini API",
+      "Render"
+    ],
+    "highlights": [
+      "Designed a modular service-layer architecture (28 services) separating authentication, analytics, ML, reporting and integrations",
+      "Implemented an end-to-end data workflow (ingestion, cleaning, EDA, AutoML, reporting) inside one RBAC-secured application",
+      "Ships with deployment manifests for Render (render.yaml, Procfile, Gunicorn config) and a serverless API entry point"
+    ],
+    "skillsDemonstrated": [
+      "Backend architecture",
+      "Role-based access control",
+      "Data preprocessing & EDA",
+      "Machine learning (scikit-learn)",
+      "REST API design",
+      "MySQL",
+      "Cloud deployment"
+    ],
+    "deployment": "Render (live demo)",
+    "relatedRepositories": [
+      {
+        "name": "DataNova Python SDK",
+        "githubUrl": "https://github.com/joshichaitanya58/datanova_sdk",
+        "description": "Official Python SDK with synchronous and asynchronous clients for the DataNova REST API"
+      }
+    ],
+    "githubUrl": "https://github.com/joshichaitanya58/DataNova",
+    "liveUrl": "https://datanova-fude.onrender.com"
+  },
+  "portfolio": {
+    "title": "My Portfolio – Developer Portfolio Website",
+    "category": "Full Stack",
+    "status": "Completed",
+    "image": "assets/images/portfolio.png",
+    "shortSummary": "Responsive developer portfolio with project showcase, internships, certifications and a working Express/Nodemailer contact form.",
+    "fullSummary": "A personal portfolio website presenting background, technical skills, internship experience, selected projects, certifications and contact details in one responsive site. The frontend uses Bootstrap 5 with AOS scroll animations and Typed.js text effects, while an Express.js backend with Nodemailer delivers contact-form messages over SMTP. Each project links to its GitHub repository and live demo where available.",
+    "keyFeatures": [
+      "Responsive layout across desktop, tablet and mobile built on Bootstrap 5",
+      "Profile introduction with downloadable resume, plus about, education, skills and internship sections",
+      "Project showcase with category filtering and links to GitHub repositories and live demos",
+      "Certifications and achievements gallery on a dedicated page",
+      "Contact form powered by an Express.js backend and Nodemailer SMTP delivery",
+      "Scroll animations (AOS) and typing effects (Typed.js) for a polished browsing experience"
+    ],
+    "techStack": [
+      "Node.js",
+      "Express.js",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap 5",
+      "AOS",
+      "Typed.js",
+      "Nodemailer",
+      "dotenv",
+      "Vercel"
+    ],
+    "highlights": [
+      "Built a full-stack personal site with a real email backend (Express, Nodemailer, SMTP)",
+      "Keeps credentials out of source control through dotenv-based configuration",
+      "Deployed the frontend on Vercel; the contact-form backend runs on any Node.js-compatible host"
+    ],
+    "skillsDemonstrated": [
+      "Full-stack JavaScript",
+      "REST endpoints with Express",
+      "Email delivery over SMTP",
+      "Responsive UI design",
+      "Deployment on Vercel"
+    ],
+    "deployment": "Vercel (frontend); contact-form backend needs Node.js hosting",
+    "githubUrl": "https://github.com/joshichaitanya58/My_Portfolio",
+    "liveUrl": "https://my-portfolio-delta-virid-82.vercel.app/"
+  },
+  "smart_shoppy": {
+    "title": "Smart Shoppy – AI Price Comparison Platform",
+    "category": "AI & Data Platforms",
+    "status": "Completed",
+    "image": "assets/images/SmartShoppy.png",
+    "shortSummary": "Flask price-comparison platform with price-history charts, target-price alerts, wishlist, AI product insights and order management.",
+    "fullSummary": "SmartShoppy is a Flask-based product discovery and price-comparison application. Users can search products by name or URL, compare seller offers, track price history, save products to a wishlist and set target-price email alerts. It also includes AI-powered product insights, OTP-verified accounts, a checkout and order-tracking flow, and an admin dashboard with analytics.",
+    "keyFeatures": [
+      "Product search by name or URL with side-by-side offer comparison, trending products and live search suggestions",
+      "Stored price history per seller, visualised with Chart.js price-trend charts",
+      "Target-price alerts with email notifications, plus a saved-products wishlist",
+      "AI product insights and recommendations through optional Groq / OpenRouter integrations",
+      "Secure accounts with password hashing, OTP verification, saved addresses, order history, invoices and cancellations",
+      "Admin dashboard to manage users, products, orders, restricted seller platforms and analytics"
+    ],
+    "techStack": [
+      "Python",
+      "Flask",
+      "Flask-SQLAlchemy",
+      "Flask-Login",
+      "WTForms",
+      "Flask-Mail",
+      "SQLite / MySQL",
+      "Requests",
+      "Beautiful Soup",
+      "APScheduler",
+      "PricesAPI",
+      "Groq / OpenRouter",
+      "Chart.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Vercel"
+    ],
+    "highlights": [
+      "Modelled a 10-entity relational schema covering users, products, offers, price history, alerts, wishlist, orders, addresses, platform restrictions and activity logs",
+      "Automated background price refreshes and alert checks with APScheduler",
+      "Built an end-to-end shopping flow (search, compare, alert, checkout, invoice) with light/dark themes and a service worker"
+    ],
+    "skillsDemonstrated": [
+      "Flask & SQLAlchemy ORM",
+      "Third-party API integration",
+      "Background job scheduling",
+      "Authentication & OTP flows",
+      "Data visualisation (Chart.js)",
+      "Admin dashboards"
+    ],
+    "deployment": "Vercel",
+    "githubUrl": "https://github.com/joshichaitanya58/smart_shoppy",
+    "liveUrl": "https://smart-shoppy.vercel.app"
+  },
+  "child_vaccination": {
+    "title": "Child Vaccination Record & Alert System",
+    "category": "Full Stack",
+    "status": "Completed",
+    "image": "assets/images/Child.png",
+    "shortSummary": "Healthcare web app for parents, doctors and admins to manage child vaccination records, appointments, reminders and certificates.",
+    "fullSummary": "A Flask and MySQL web application that helps parents manage children's vaccination records, appointments, reminders, growth information and certificates. Separate dashboards serve parents, doctors and administrators, with OTP-verified sign-up, email reminders and optional SMS through TextBee. It also includes PDF certificate and invoice generation, nearby doctor discovery, a Groq-powered chatbot and a product store. Built as an academic demonstration, not a verified clinical records system.",
+    "keyFeatures": [
+      "Role-specific portals for parents, doctors and admins with OTP verification and password recovery",
+      "Child profile management, vaccination history, growth tracking, and appointment booking, cancellation and rescheduling",
+      "Automated email reminders (Flask-Mail) with optional SMS via TextBee, scheduled with Flask-APScheduler",
+      "Downloadable vaccination certificates and invoices generated as PDFs, with QR code support",
+      "Doctor availability slots and location-based doctor/hospital discovery",
+      "AI chatbot (Groq) and a parent product store with orders, wishlist and reviews"
+    ],
+    "techStack": [
+      "Python",
+      "Flask",
+      "MySQL",
+      "mysql-connector-python",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Flask-Mail",
+      "Flask-APScheduler",
+      "FPDF",
+      "qrcode",
+      "Pillow",
+      "geopy",
+      "Groq SDK",
+      "Gunicorn",
+      "Vercel"
+    ],
+    "highlights": [
+      "Implemented three-role access (Parent, Doctor, Admin) in one Flask codebase with separate dashboards and APIs",
+      "Built a notification pipeline combining scheduled jobs, email and an optional SMS gateway",
+      "Added a database optimisation script (db_optimizations.sql) for indexing and query performance"
+    ],
+    "skillsDemonstrated": [
+      "Role-based dashboards",
+      "Relational database design (MySQL)",
+      "Scheduled jobs & notifications",
+      "PDF generation",
+      "Healthcare workflow design",
+      "AI chatbot integration"
+    ],
+    "deployment": "Vercel",
+    "githubUrl": "https://github.com/joshichaitanya58/child_vaccination_record_and_alert_system",
+    "liveUrl": "https://child-vaccination-record-and-alert.vercel.app/"
+  },
+  "jaldi_trip": {
+    "title": "JaldiTrip – Travel Booking & Trip Planning Platform",
+    "category": "Full Stack",
+    "status": "Completed",
+    "image": "assets/images/jalditrip.png",
+    "shortSummary": "Travel booking platform for flights, trains, buses, hotels and holiday packages with accounts, payments, dashboards and an admin area.",
+    "fullSummary": "JaldiTrip is a travel-booking web application that brings flights, trains, buses, hotels and holiday packages into one interface. An Express backend serves the frontend and a REST API for authentication, search, bookings, payments, dashboards and administration, backed by MySQL. It includes OTP and Google sign-in flows, JWT-protected routes, cancellation and refund tracking, and an optional Groq-powered AI travel assistant.",
+    "keyFeatures": [
+      "Unified search across flights, trains, buses, hotels and holiday packages, with city suggestions and sample-inventory fallback when live providers are unavailable",
+      "Signup and login with OTP flows, Google sign-in support, JWT-protected user and admin routes, and bcrypt password hashing",
+      "Booking management with reference/PNR tracking, cancellation requests, refund status and reviews",
+      "Payment records and wallet/payment UI, with normal and premium membership roles",
+      "AI travel chat and recommendation endpoints (optional Groq integration)",
+      "Admin analytics plus user and booking management endpoints"
+    ],
+    "techStack": [
+      "Node.js",
+      "Express.js",
+      "MySQL (mysql2)",
+      "JWT",
+      "bcryptjs",
+      "Google Auth Library",
+      "Nodemailer",
+      "Bootstrap 5",
+      "Choices.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Groq API",
+      "RapidAPI",
+      "Vercel"
+    ],
+    "highlights": [
+      "Structured the backend into routes, controllers, models, middleware, services and utilities, with validation, security and error-handling middleware",
+      "Added rate limiting and caching of recent API/database results to reduce duplicate requests",
+      "Provided a SQL schema, a migration utility and basic authentication and booking tests"
+    ],
+    "skillsDemonstrated": [
+      "REST API design",
+      "JWT authentication",
+      "MySQL schema design",
+      "MVC-style architecture",
+      "Third-party API integration",
+      "Backend testing basics"
+    ],
+    "deployment": "Vercel",
+    "githubUrl": "https://github.com/joshichaitanya58/jaldiTrip",
+    "liveUrl": "https://jaldi-trip.vercel.app/"
+  },
+  "convai": {
+    "title": "ConvAI – AI Chat Assistant",
+    "category": "AI & Data Platforms",
+    "status": "Completed",
+    "image": "assets/images/convai.png",
+    "shortSummary": "Flask + MongoDB AI chat app with selectable models, file attachments, chat history, Google sign-in and voice input.",
+    "fullSummary": "ConvAI is an AI chat web application built with Flask, MongoDB and JavaScript. Users can create accounts, switch between supported AI models, attach documents for context, manage and share past conversations, and personalise the interface. Authentication covers email OTP verification, Google OAuth and password recovery.",
+    "keyFeatures": [
+      "Chat with selectable models through Groq and Google Gemini integrations, with suggested prompts and response ratings",
+      "Persistent conversation history: search, rename, delete, clear and share chats through links",
+      "File attachments (PDF, TXT, Markdown, CSV, DOCX, Excel, PowerPoint) with text extraction used as chat context",
+      "Email OTP verification, Google OAuth sign-in, forgot/reset password, profile with avatar and account deletion",
+      "Dark and light themes, font-size preferences and voice input through the Web Speech API",
+      "Monthly and yearly plan pages with a UPI QR payment flow (demo)"
+    ],
+    "techStack": [
+      "Python",
+      "Flask",
+      "MongoDB (PyMongo)",
+      "Flask-Login",
+      "Authlib (Google OAuth)",
+      "Groq SDK",
+      "Google Gen AI SDK",
+      "Flask-Mail",
+      "PyPDF2",
+      "python-docx",
+      "openpyxl",
+      "python-pptx",
+      "APScheduler",
+      "Gunicorn",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Vercel"
+    ],
+    "highlights": [
+      "Integrated multiple LLM providers behind one chat API with per-request file context",
+      "Built a document-parsing pipeline that supports 7 file formats",
+      "Implemented the full account lifecycle: OTP signup, Google OAuth, password reset, profile management and account deletion"
+    ],
+    "skillsDemonstrated": [
+      "LLM API integration",
+      "NoSQL (MongoDB)",
+      "OAuth 2.0 & OTP authentication",
+      "Document parsing",
+      "Context handling for AI prompts",
+      "Responsive chat UI"
+    ],
+    "deployment": "Vercel",
+    "githubUrl": "https://github.com/joshichaitanya58/ConvAI",
+    "liveUrl": "https://conv-ai-silk.vercel.app/login"
+  },
+  "fastapi_book": {
+    "title": "BookVault – Book Catalog & Reading Tracker (FastAPI)",
+    "category": "Full Stack",
+    "status": "Completed",
+    "image": "assets/images/fastapi.png",
+    "shortSummary": "FastAPI REST service and web UI for managing a book catalog with search, filters, sorting, pagination and a reading-statistics dashboard.",
+    "fullSummary": "BookVault is a book catalog and reading-tracker application built with FastAPI, Python and vanilla JavaScript. It exposes a validated REST API with full CRUD (PUT and PATCH), search, genre and status filters, sorting and pagination, and serves a responsive web interface from the same app. Data is stored in a JSON file for simple setup, with interactive Swagger UI and ReDoc documentation and a health-check endpoint.",
+    "keyFeatures": [
+      "Full CRUD for books (title, author, genre, year, pages, rating, ISBN, cover, status, description) with PUT and PATCH updates",
+      "Search by title, author, genre or description; filters by genre and reading status; sorting and limit/offset pagination",
+      "Reading dashboard with total books, average rating, counts by status and genre statistics",
+      "Pydantic request and response validation with interactive Swagger UI and ReDoc documentation",
+      "Health-check endpoint, structured logging and lock-protected JSON file storage",
+      "Responsive grid and list web interface served directly by FastAPI"
+    ],
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "Pydantic",
+      "Uvicorn",
+      "JSON file storage",
+      "JavaScript (Vanilla)",
+      "HTML5",
+      "CSS3",
+      "Vercel"
+    ],
+    "highlights": [
+      "Designed a RESTful API with typed schemas and auto-generated OpenAPI documentation",
+      "Implemented query-parameter-driven search, filtering, sorting and pagination for list endpoints",
+      "Served the frontend and API from a single FastAPI app, configured for Vercel deployment"
+    ],
+    "skillsDemonstrated": [
+      "REST API design",
+      "FastAPI & Pydantic",
+      "API documentation (OpenAPI)",
+      "Data modelling",
+      "Frontend–API integration"
+    ],
+    "deployment": "Vercel",
+    "githubUrl": "https://github.com/joshichaitanya58/FastApi_Project",
+    "liveUrl": "https://fast-api-project-xi.vercel.app/"
+  },
+  "hospital_dbms": {
+    "title": "Hospital Database Management System",
+    "category": "Full Stack",
+    "status": "Completed",
+    "image": "assets/images/Hospital.png",
+    "shortSummary": "PHP and MySQL hospital web app covering patient accounts, appointments, doctor dashboards, medical records and billing.",
+    "fullSummary": "A PHP and MySQL hospital management web application that connects patients, doctors and administrators through common workflows. Patients register, book appointments, upload files for their doctor and view records and bills; doctors manage appointments, maintain medical records and generate bills; admins manage data across tables with CSV export. Built as an academic project to demonstrate relational design, CRUD operations and session-based access.",
+    "keyFeatures": [
+      "Patient portal: registration and login, appointment booking, medical records, and bills with receipts and payment status",
+      "File upload so patients can share documents with a selected doctor",
+      "Doctor dashboard to view assigned appointments, mark them completed, create and update medical records, and generate bills",
+      "Admin interface to view, update and delete records across tables, with CSV export that masks password fields",
+      "Appointment lifecycle from scheduled to completed, plus contact form and forgot-password flow",
+      "Relational schema spanning patients, doctors, appointments, medical records, bills and contact messages"
+    ],
+    "techStack": [
+      "PHP",
+      "MySQL",
+      "MySQLi",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Apache (XAMPP)"
+    ],
+    "highlights": [
+      "Demonstrates CRUD operations, primary/foreign-key relationships and prepared statements for several database operations",
+      "Implemented session-based login for three roles (patient, doctor, admin)",
+      "Built the appointment lifecycle together with billing and receipt generation"
+    ],
+    "skillsDemonstrated": [
+      "PHP & MySQL",
+      "Relational database design",
+      "CRUD & prepared statements",
+      "Session management",
+      "Healthcare domain workflows"
+    ],
+    "deployment": "Runs locally on XAMPP/Apache; hosted demo pending",
+    "githubUrl": "https://github.com/joshichaitanya58/Hospital-Database-Management-System",
+    "liveUrl": "deployPending.html"
+  },
+  "quiz": {
+    "title": "KBC Quiz Game",
+    "category": "Frontend & Utilities",
+    "status": "Completed",
+    "image": "assets/images/Quiz.png",
+    "shortSummary": "Browser quiz game inspired by Kaun Banega Crorepati, with a 45-second timer, 50:50 and Audience Poll lifelines, and score tracking.",
+    "fullSummary": "An educational browser quiz game inspired by the Kaun Banega Crorepati quiz-show format (not an official KBC product), built with HTML, CSS and vanilla JavaScript. Players answer general-knowledge questions against a 45-second countdown, use lifelines and skips, and see instant feedback as their score grows. A multi-screen flow, sound controls and a dark, gold-accented design recreate the quiz-show feel.",
+    "keyFeatures": [
+      "Multi-screen game flow: intro, rules, welcome, gameplay and game-over screens",
+      "45-second countdown per question with live score and question progress",
+      "50:50 lifeline that removes two wrong options and an Audience Poll lifeline showing percentage bars",
+      "Skip up to five questions per game, plus a sound on/off control",
+      "General-knowledge question bank (India, science, technology, history) with Hindi and English content",
+      "Instant answer feedback; an incorrect answer or a timeout ends the game"
+    ],
+    "techStack": [
+      "JavaScript (Vanilla)",
+      "HTML5",
+      "CSS3",
+      "MP3 audio",
+      "GitHub Pages"
+    ],
+    "highlights": [
+      "Implemented game state, timers and lifeline logic without any framework",
+      "Zero-dependency project that runs straight from index.html"
+    ],
+    "skillsDemonstrated": [
+      "DOM manipulation",
+      "Game state management",
+      "Timers & event handling",
+      "Responsive CSS",
+      "Audio handling"
+    ],
+    "deployment": "GitHub Pages",
+    "githubUrl": "https://github.com/joshichaitanya58/Quiz",
+    "liveUrl": "https://joshichaitanya58.github.io/Quiz/"
+  },
+  "calculator": {
+    "title": "Scientific Web Calculator",
+    "category": "Frontend & Utilities",
+    "status": "Completed",
+    "image": "assets/images/calculator.png",
+    "shortSummary": "Responsive calculator with basic and scientific modes, keyboard support, degree/radian toggle and graceful error handling.",
+    "fullSummary": "A responsive browser calculator built with HTML, CSS and vanilla JavaScript. It handles standard arithmetic and percentages, and a 'More' toggle reveals scientific functions including trigonometry (with inverse functions and degree/radian modes), logarithms, powers, square roots, factorial, π and e. Full keyboard input, parentheses with implicit multiplication and error handling for invalid expressions make it comfortable to use on desktop and mobile.",
+    "keyFeatures": [
+      "Basic mode: addition, subtraction, multiplication, division, percentage, decimals, clear and backspace",
+      "Scientific mode: sin, cos, tan and their inverses, log, ln, square root, powers, factorial and the constants π and e",
+      "Degree and radian angle modes for trigonometric functions",
+      "Parentheses and implicit multiplication in expressions such as 2π and 2(3)",
+      "Full keyboard support with shortcuts for operators, π, e, calculate and clear",
+      "Error handling for invalid and non-finite results, with rounding to reduce floating-point display errors"
+    ],
+    "techStack": [
+      "JavaScript (Vanilla)",
+      "HTML5",
+      "CSS3 (Grid)",
+      "GitHub Pages"
+    ],
+    "highlights": [
+      "Built a custom calculation engine that handles operator precedence, parentheses and scientific functions",
+      "Handled edge cases such as division by zero, factorial on non-negative integers only, and floating-point rounding"
+    ],
+    "skillsDemonstrated": [
+      "JavaScript logic & expression handling",
+      "Keyboard event handling",
+      "Responsive grid layout",
+      "Edge-case handling"
+    ],
+    "deployment": "GitHub Pages",
+    "githubUrl": "https://github.com/joshichaitanya58/Simple-Calculator",
+    "liveUrl": "https://joshichaitanya58.github.io/Simple-Calculator/"
+  },
+  "tic_tac_toe": {
+    "title": "Tic Tac Toe",
+    "category": "Frontend & Utilities",
+    "status": "Completed",
+    "image": "assets/images/tic-tac-toe.png",
+    "shortSummary": "Two-player Tic Tac Toe with custom player names, win and draw detection, highlighted winning cells and a persistent round scoreboard.",
+    "fullSummary": "A clean, responsive Tic Tac Toe game built with HTML, CSS and vanilla JavaScript. Two players enter their names and take turns on the same device while the game checks all eight winning combinations, detects draws and highlights the winning line. A scoreboard tracks each player's wins and the number of draws across rounds, with Play Again keeping scores and Change Players resetting them.",
+    "keyFeatures": [
+      "Two-player local gameplay with custom player names and a turn indicator",
+      "Win detection across all eight combinations (3 rows, 3 columns, 2 diagonals) with highlighted winning cells",
+      "Draw detection when the board is full; the board locks once a round ends",
+      "Scoreboard tracking wins for both players and draws across rounds",
+      "Play Again keeps scores; Change Players returns to setup and resets them",
+      "Responsive layout with hover states, transitions and win animations"
+    ],
+    "techStack": [
+      "JavaScript (Vanilla)",
+      "HTML5",
+      "CSS3",
+      "GitHub Pages"
+    ],
+    "highlights": [
+      "Implemented win and draw checks after every move and locked the board at the end of each round",
+      "Zero-dependency project that runs straight from index.html"
+    ],
+    "skillsDemonstrated": [
+      "Algorithmic thinking",
+      "DOM event handling",
+      "State management",
+      "CSS animations"
+    ],
+    "deployment": "GitHub Pages",
+    "githubUrl": "https://github.com/joshichaitanya58/Tic-Tac-Toe",
+    "liveUrl": "https://joshichaitanya58.github.io/Tic-Tac-Toe/"
+  },
+  "blog": {
+    "title": "SimpleBlog – Personal Publishing Platform",
+    "category": "Frontend & Utilities",
+    "status": "Completed",
+    "image": "assets/images/blog.png",
+    "shortSummary": "Responsive blogging site where users write, search, filter, edit and delete articles, persisted in browser localStorage.",
+    "fullSummary": "SimpleBlog is a browser-based blogging website built with HTML, CSS and vanilla JavaScript. Users write articles with a title, author and category, browse them in a responsive feed, and read, edit or delete posts through modal dialogs. Search, category filters, reading-time estimates and a live word counter round out the experience, with posts saved locally in the browser.",
+    "keyFeatures": [
+      "Create posts with a title, optional author, category (Technology, Coding, Career, Lifestyle) and content",
+      "Responsive article feed with a full-article reading modal",
+      "Edit and delete posts, with a confirmation prompt before deletion",
+      "Search by title or content and filter by category",
+      "Reading-time estimates, a live word count while writing and a homepage article counter",
+      "Posts persisted in browser localStorage, with a sample welcome article on first load"
+    ],
+    "techStack": [
+      "JavaScript (Vanilla)",
+      "HTML5",
+      "CSS3",
+      "Web Storage API (localStorage)",
+      "Google Fonts (Inter)",
+      "GitHub Pages"
+    ],
+    "highlights": [
+      "Built full client-side CRUD with localStorage persistence",
+      "Implemented modal-based read and edit flows with live search and category filtering, without any framework"
+    ],
+    "skillsDemonstrated": [
+      "Client-side CRUD",
+      "Web Storage API",
+      "DOM manipulation",
+      "Responsive design"
+    ],
+    "deployment": "GitHub Pages",
+    "githubUrl": "https://github.com/joshichaitanya58/Simple_Blog_Website",
+    "liveUrl": "https://joshichaitanya58.github.io/Simple_Blog_Website/"
+  },
+  "angular_swiftcart": {
+    "title": "SwiftCart – Angular Shopping Website",
+    "category": "Frontend & Utilities",
+    "status": "Completed",
+    "image": "assets/images/angular.png",
+    "shortSummary": "Angular 20 storefront demo with product listing, routing, template-driven and reactive forms, an API-driven user list and SSR setup.",
+    "fullSummary": "SwiftCart is a front-end e-commerce learning project built with Angular 20, TypeScript and Bootstrap 5. It demonstrates a product listing page, client-side routing across Home, About, Contact, Login, Cart, Reactive Form and API pages, form handling with validation, and displaying user data fetched from an API. The project is configured for Angular server-side rendering with an Express 5 server, and the cart page serves as the starting point for shopping-cart functionality.",
+    "keyFeatures": [
+      "Home page with product cards showing images, descriptions and prices",
+      "Client-side routing across seven pages, with the root route redirecting to /home",
+      "Login and contact forms built with Angular template-driven forms, including required-field and email validation",
+      "Reactive Forms demo page showcasing Angular's reactive form approach",
+      "Users-from-API page that displays records fetched from an API in a table",
+      "Responsive Bootstrap 5 layout and Angular SSR configuration"
+    ],
+    "techStack": [
+      "Angular 20",
+      "TypeScript",
+      "RxJS",
+      "Bootstrap 5",
+      "HTML5",
+      "CSS3",
+      "Angular SSR",
+      "Express 5"
+    ],
+    "highlights": [
+      "Applied Angular's component-based architecture with a dedicated component for each page",
+      "Demonstrated both template-driven and reactive forms with validation",
+      "Configured Angular server-side rendering with an Express 5 server"
+    ],
+    "skillsDemonstrated": [
+      "Angular & TypeScript",
+      "Client-side routing",
+      "Forms (template-driven & reactive)",
+      "Consuming REST APIs",
+      "SSR basics"
+    ],
+    "deployment": "Runs locally with npm start; hosted demo pending",
+    "githubUrl": "https://github.com/joshichaitanya58/Angular_Project_-SwiftCart-",
+    "liveUrl": "deployPending.html"
+  },
+  "quiz_master": {
+    "title": "QuizMaster Pro – Interactive Knowledge Quiz",
+    "category": "Frontend & Utilities",
+    "status": "Completed",
+    "image": "assets/images/quiz_master.png",
+    "shortSummary": "Timed multiple-choice quiz with topic selection, 15-second questions, instant feedback with explanations and a full answer review.",
+    "fullSummary": "QuizMaster Pro is a responsive browser-based multiple-choice quiz built with HTML, CSS and vanilla JavaScript as part of Tech Interex Internship Task 3. Users pick All Categories or a topic (Computer Science & Technology, Science & Space, or World & General Trivia) and answer shuffled questions against a 15-second timer. Each answer gets instant feedback with an explanation, and a results screen reports the percentage score, correct and incorrect counts, average time and a complete answer review.",
+    "keyFeatures": [
+      "Topic selection: All Categories, Computer Science & Technology, Science & Space, or World & General Trivia",
+      "15-second timer per question that automatically evaluates the answer when time runs out",
+      "Live score and question progress indicators, with questions shuffled each attempt",
+      "Instant correct/incorrect highlighting with an explanation for every answer",
+      "Performance summary with percentage, correct and incorrect counts, and average time per question",
+      "Answer review screen and keyboard shortcuts for selecting answers and continuing"
+    ],
+    "techStack": [
+      "JavaScript (Vanilla)",
+      "HTML5",
+      "CSS3",
+      "Google Fonts (Inter)",
+      "GitHub Pages"
+    ],
+    "highlights": [
+      "Built during the Tech Interex web development internship (Task 3)",
+      "Implemented timer, scoring, question shuffling and answer-review logic without any framework"
+    ],
+    "skillsDemonstrated": [
+      "JavaScript fundamentals",
+      "Timer & state logic",
+      "UX feedback design",
+      "Responsive CSS"
+    ],
+    "deployment": "GitHub Pages",
+    "githubUrl": "https://github.com/joshichaitanya58/quiz_master",
+    "liveUrl": "https://joshichaitanya58.github.io/quiz_master/"
+  }
+}
